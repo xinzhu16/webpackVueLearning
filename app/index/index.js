@@ -6,5 +6,5 @@ import Favlist from './components/Favlist'
 
 new Vue({
     el:'#test',
-    components:{Favlist}
+    render:h => h(Favlist)
 })

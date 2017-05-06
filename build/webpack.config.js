@@ -2,7 +2,7 @@
  * Created by Administrator on 17/5/6.
  */
 var path = require('path');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry:path.resolve(__dirname,'../app/index/index.js'),
 
@@ -33,5 +33,14 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    }
+    },
+
+//    插件模块，热加载
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: '../index.html',
+            template: path.resolve(__dirname, '../app/index/index.html'),
+            inject: true
+        })
+    ]
 }
