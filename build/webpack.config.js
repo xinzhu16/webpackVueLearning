@@ -2,7 +2,7 @@
  * Created by Administrator on 17/5/6.
  */
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry:path.resolve(__dirname,'../app/index/index.js'),
 
