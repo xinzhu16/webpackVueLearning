@@ -28,10 +28,15 @@ compiler.plugin('compilation', function (compilation) {
 
 app.use(devMiddleware);
 app.use(hotMiddleware);
-app.listen(8899,function (err){
+var webconfig = {
+    port:8888,
+    host:'localhost:',
+    route:'/index.html'
+}
+app.listen(webconfig.port,function (err){
     if(err){
         console.log(err);
         return
     }
-    console.log('listening at http://localhost:8888')
+    console.log('listening at',webconfig.host,webconfig.port,webconfig.route);
 })
