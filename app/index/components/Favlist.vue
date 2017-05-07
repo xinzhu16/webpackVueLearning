@@ -1,6 +1,7 @@
 <template>
     <div>
         <div v-for="n in 10">{{msg}}</div>
+        <a href="./index.html">test</a>
     </div>
 </template>
 
