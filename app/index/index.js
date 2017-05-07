@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 17/5/6.
  */
-import Vue from 'Vue'
+import Vue from 'vue'
 import Favlist from './components/Favlist'
 
 new Vue({
