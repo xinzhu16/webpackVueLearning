@@ -7,7 +7,7 @@ var path = require('path');
 // 引入基本配置
 var config = require('./webpack.config');
 
-config.output.publicPath = '/';
+config.output.publicPath = '/static';
 
 config.plugins = [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -21,6 +21,7 @@ config.plugins = [
     })
 ];
 
+// config.entry = ['webpack-hot-middleware/client',config.entry];
 var devClient = './build/dev-client';
 Object.keys(config.entry).forEach(function (name, i) {
     var extras = [devClient]

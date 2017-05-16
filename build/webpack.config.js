@@ -4,8 +4,12 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    entry:path.resolve(__dirname,'../app/index/index.js'),
+    //使用热加载需要将入口改为多入口配置的方式，并且不影响构建。
+    entry:{
+        index:path.resolve(__dirname,'../app/index/index.js')
+    },
 
+    //publicPath 相对于根目录下的应用文件起始位置。
     output:{
         path:path.resolve(__dirname,'../output/static'),
         //publicpath作用

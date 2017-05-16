@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./bulid/webpack.dev.server.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,9 @@
     "url": "https://github.com/xinzhu16/webpackVueLearning/issues"
   },
   "homepage": "https://github.com/xinzhu16/webpackVueLearning#readme",
+  "script": {
+      "dev" : "node ./build/webpack.dev.server.js"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
