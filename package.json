@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./bulid/webpack.dev.server.js"
+    "test": "node ./build/webpack.dev.server.js"
   },
   "repository": {
     "type": "git",

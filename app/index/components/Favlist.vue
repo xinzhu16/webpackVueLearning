@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="n in 10">{{msg}}</div>
+        <div v-for="n in arrObj">{{n.name}}</div>
         <a href="./index.html">test</a>
         <div>
             <div class = 'd1'>dddddddddddddddddddddd1</div>
@@ -15,7 +15,9 @@
     export default {
         data () {
             return {
-                msg: 'Hello World!'
+                msg: 'Hello World!',
+                arr: [1,2,3],
+                arrObj:[{data:1,name:'z'}]
             }
         }
     }
