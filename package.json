@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "node ./build/webpack.dev.server.js"
-=======
     "test": "node ./build/webpack.dev.server.js",
     "build": "node  ./build/webpack.config.js"
->>>>>>> ee5223a5fb31bbc9d0ae19c5e5fb53cd5d51c16a
   },
   "repository": {
     "type": "git",
