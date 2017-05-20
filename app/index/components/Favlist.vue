@@ -12,7 +12,9 @@
                 <temp></temp>
             </div>
             <div id="2222">
-                <temp2></temp2>
+                <temp2>
+                    <!--<p>slot测试</p>-->
+                </temp2>
             </div>
         </div>
     </div>

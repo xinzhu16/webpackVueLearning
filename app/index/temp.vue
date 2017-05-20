@@ -2,6 +2,9 @@
     <div>
         <p>{{msg}}</p>
         <input v-model="msg">
+        <slot>
+            ddddddd
+        </slot>
     </div>
 </template>
 
