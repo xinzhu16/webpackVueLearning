@@ -13,4 +13,6 @@
             }
         }
     }
+//    vm.message2 = 'nextTick';
+//    console.log(vm.$el.textContent);
 </script>
