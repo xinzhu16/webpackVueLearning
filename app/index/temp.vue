@@ -3,7 +3,7 @@
         <p>{{msg}}</p>
         <input v-model="msg">
         <p>{{prop}}</p>
-        <p @click="communication">{{counter}}</p>
+        <p @click="communication" id="d2">{{counter}}</p>
     </div>
 </template>
 

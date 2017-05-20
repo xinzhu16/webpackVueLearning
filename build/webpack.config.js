@@ -20,7 +20,11 @@ module.exports = {
     },
     //resolve遇到该数组的结尾的文件需要加载，要不默认加载js，vue等不声明不会加载，会报错
     resolve :{
-        extensions:['.js','.vue']
+        extensions:['.js','.vue'],
+        /*alias:{
+            'vue':'vue/dist/vue.js'
+        }*/
+    //    不加alias时是运行时构建。必须使用render函数，不能使用template。
     },
 
     module:{

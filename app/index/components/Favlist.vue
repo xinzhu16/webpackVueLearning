@@ -4,10 +4,6 @@
         <a href="./index.html">test</a>
         <input v-model="msg">
         <div>
-            <div class = 'd1'>dddddddddddddddddddddd1</div>
-            <div class="d2">llllllllllllllllllllllllllllllllllllll</div>
-            <div class="d1">dddddddddddddddddddd</div>
-            <div class="d2">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</div>
             <div>
                 <temp></temp>
             </div>
@@ -21,14 +17,20 @@
                     <p>llll</p>
                 </zslot>
             </div>
+            <next-tick></next-tick>
         </div>
+        <toggle></toggle>
     </div>
+
 </template>
 
 <script>
     import temp from './temp';
     import temp2 from '../temp';
     import zslot from './slot';
+    import nextTick from './nextTick';
+    import toggle from './transition';
+
     export default {
         data () {
             return {
@@ -39,7 +41,9 @@
         components:{
             'temp':temp,
             'temp2':temp2,
-            'zslot':zslot
+            'zslot':zslot,
+            'nextTick':nextTick,
+            'toggle':toggle
         },
         methods:{
             getComm:function () {
