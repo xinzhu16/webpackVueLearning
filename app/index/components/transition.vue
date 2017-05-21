@@ -1,7 +1,11 @@
 <template>
     <div>
         <button @click="show=!show">toggle</button>
-        <p v-show="show" class="fade">show</p>
+        <transition name="fade">
+            <p v-if="show">show</p>
+            <p v-else>not show</p>
+        </transition>
+
     </div>
 </template>
 <script>
@@ -14,7 +18,10 @@
     }
 </script>
 <style>
-    .fade-enter-active{
-        transition: opacity .5s;
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-active {
+        opacity: 0
     }
 </style>

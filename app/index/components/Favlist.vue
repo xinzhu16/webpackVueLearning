@@ -3,6 +3,7 @@
         <div v-for="n in arrObj">{{n.name}}</div>
         <a href="./index.html">test</a>
         <input v-model="msg">
+        <toggle></toggle>
         <div>
             <div>
                 <temp></temp>
@@ -25,7 +26,7 @@
             </div>
             <next-tick></next-tick>
         </div>
-        <toggle></toggle>
+
     </div>
 
 </template>

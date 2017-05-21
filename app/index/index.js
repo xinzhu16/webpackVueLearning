@@ -3,6 +3,8 @@
  */
 import Vue from 'vue'
 import Favlist from './components/Favlist'
+// import VueRouter from 'vue-router';
+
 
 new Vue({
     el:'#test',
