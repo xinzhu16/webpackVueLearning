@@ -23,10 +23,13 @@ config.plugins = [
 
 // config.entry = ['webpack-hot-middleware/client',config.entry];
 var devClient = './build/dev-client';
+console.log('debClient');
+console.log(devClient);
 Object.keys(config.entry).forEach(function (name, i) {
-    var extras = [devClient]
-    config.entry[name] = extras.concat(config.entry[name])
+    var extras = [devClient];
+    config.entry[name] = extras.concat(config.entry[name]);
 })
+console.log(config.entry);
 
 
 module.exports = config;

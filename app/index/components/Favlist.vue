@@ -36,7 +36,6 @@
     import v from '../js/const';
     import k from '../js/static';
     import debounce from './debounce';
-    console.log(A);
     export default {
         data () {
             return {

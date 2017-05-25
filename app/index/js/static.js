@@ -4,7 +4,6 @@
 import {A} from './const';
 
 // A = 'static';
-console.log(A);
 var k = '1';
 var setArr = function(m,n){
     var arr  = new Array(m);
