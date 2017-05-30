@@ -43,7 +43,7 @@ module.exports = {
         ]
     },
 
-//    插件模块，热加载
+//    插件模块
     plugins: [
         new HtmlWebpackPlugin({
             filename: '../index.html',
