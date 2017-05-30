@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 17/5/24.
  */
-import {A} from './const';
+// var A = require;
 
 // A = 'static';
 var k = '1';
@@ -10,3 +10,4 @@ var setArr = function(m,n){
     return arr;
 }
 export default k;
+// export {A}

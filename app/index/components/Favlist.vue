@@ -21,6 +21,8 @@
             <next-tick></next-tick>
         </div>
         <debounce></debounce>
+        <box-model></box-model>
+        <nth-child></nth-child>
     </div>
 
 </template>
@@ -31,11 +33,13 @@
     import zslot from './slot';
     import nextTick from './nextTick';
     import toggle from './transition';
+    import nthChild from './nthChild'
     import {instance1,instance2} from '../js/prototype.vue';
-    import {A,Person} from '../js/const';
+    import {A,Person,obj} from '../js/const';
     import v from '../js/const';
     import k from '../js/static';
     import debounce from './debounce';
+    import boxModel from './boxModel'
     export default {
         data () {
             return {
@@ -49,7 +53,9 @@
             'zslot':zslot,
             'nextTick':nextTick,
             'toggle':toggle,
-            'debounce':debounce
+            'debounce':debounce,
+            'boxModel':boxModel,
+            'nthChild':nthChild
         },
         methods:{
             getComm:function () {
@@ -57,8 +63,7 @@
             }
         }
     }
-    console.log(instance1);
-    console.log(instance2);
+    console.log(obj);
 </script>
 
 <style>

@@ -3,6 +3,7 @@
  */
 var A =1;
 var B = 2;
+var obj = {};
 var Top = function(){
     this.age = 9;
     this.friends = ['bob']
@@ -12,13 +13,7 @@ var Person = function () {
 };
 Person.prototype = new Top();
 var person1 = new Person();
-var person3 = new Person();
-console.log('没有构造器');
-console.log(person1);
-console.log(person1.age,person3.age);
 person1.friends.push('Jhon');
 person1.age = 5;
-console.log(person1.age,person3.age);
-console.log(person1.friends,person3.friends);
-export {A,Person}
+export {A,Person,obj}
 export default B;
