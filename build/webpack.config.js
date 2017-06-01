@@ -50,5 +50,9 @@ module.exports = {
             template: path.resolve(__dirname, '../app/index/index.html'),
             inject: true
         })
+        /*new webpack.ProvidePlugin({
+            $: "jquery",
+            _: "underscore"
+        })*/
     ]
 }
