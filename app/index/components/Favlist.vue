@@ -32,7 +32,6 @@
     </div>
 
 </template>
-
 <script>
     import temp from './temp';
     import temp2 from '../temp';
@@ -45,7 +44,8 @@
     import v from '../js/const';
     import k from '../js/static';
     import debounce from './debounce';
-    import boxModel from './boxModel'
+    import boxModel from './boxModel';
+    import kk from '../underscoreTemplate/input'
     export default {
         data () {
             return {
