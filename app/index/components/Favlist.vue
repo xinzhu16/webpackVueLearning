@@ -22,11 +22,12 @@
         </div>
         <debounce></debounce>
         <box-model></box-model>
-        <nth-child></nth-child>-->
+        <nth-child></nth-child>
+        <center-align></center-align>
+        <flex></flex>
     </div>
 
 </template>
-
 <script>
     import temp from './temp';
     import temp2 from '../temp';
@@ -39,11 +40,16 @@
     import v from '../js/const';
     import k from '../js/static';
     import debounce from './debounce';
-    import boxModel from './boxModel'
+    import boxModel from './boxModel';
+    import kk from '../underscoreTemplate/input';
+    import centerAlign from './centerAlign';
+    import flex from './flex'
     export default {
         data () {
             return {
                 msg: 'Hello World!',
+                arr: [1,2,3],
+                arrObj:[{data:1,name:'z'}],
                 counter:0
             }
         },
@@ -55,7 +61,9 @@
             'toggle':toggle,
             'debounce':debounce,
             'boxModel':boxModel,
-            'nthChild':nthChild
+            'nthChild':nthChild,
+            'centerAlign':centerAlign,
+            'flex':flex
         },
         methods:{
             getComm:function () {

@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/xinzhu16/webpackVueLearning#readme",
   "script": {
-      "dev" : "node ./build/webpack.dev.server.js"
+    "dev": "node ./build/webpack.dev.server.js"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -28,6 +28,7 @@
     "babel-runtime": "^5.8.38",
     "css-loader": "^0.28.1",
     "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
     "vue-hot-reload-api": "^2.1.0",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^12.0.3",

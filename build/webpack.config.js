@@ -39,6 +39,10 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader?presets=es2015',
                 exclude: /node_modules/
+            },
+            {
+                test:/\.s[c|a]ss$/,
+                loader:'style!css!sass'
             }
         ]
     },
@@ -50,5 +54,9 @@ module.exports = {
             template: path.resolve(__dirname, '../app/index/index.html'),
             inject: true
         })
+        /*new webpack.ProvidePlugin({
+            $: "jquery",
+            _: "underscore"
+        })*/
     ]
 }

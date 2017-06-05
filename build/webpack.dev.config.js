@@ -7,7 +7,7 @@ var path = require('path');
 // 引入基本配置
 var config = require('./webpack.config');
 
-config.output.publicPath = '/static';
+config.output.publicPath = '/';
 
 config.plugins = [
     new webpack.optimize.OccurrenceOrderPlugin(),
