@@ -18,7 +18,7 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="scss" rel="stylesheet/scss">
     .parent{
         display: table-cell;
         vertical-align: center;

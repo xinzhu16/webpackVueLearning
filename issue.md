@@ -2,3 +2,4 @@
 始于2017.6.5
 
 1:scss的使用，现在不能使用scss，请查找相关资料解决问题
+    在vue的loader对象中加入options：...,详情见webpack.config.js文件中vueloader中的options

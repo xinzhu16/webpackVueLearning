@@ -18,11 +18,12 @@
         display: flex;
         width:500px;
         height: 500px;
+        .child{
+            width:100px;
+            height:100px;
+        }
     }
-    .child{
-        width:100px;
-        height:100px;
-    }
+
     .item1{
         flex:0;
         width:100px;

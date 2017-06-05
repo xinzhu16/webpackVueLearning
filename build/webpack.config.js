@@ -33,7 +33,13 @@ module.exports = {
             // 使用vue-loader 加载 .vue 结尾的文件
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
+                loader: 'vue-loader',
+                options: {    //options
+                    loaders: {
+                        scss: 'style-loader!css-loader!sass-loader',
+                        sass: 'style-loader!css-loader!sass-loader?indentedSyntax',
+                    },
+                }
             },
             {
                 test: /\.js$/,
