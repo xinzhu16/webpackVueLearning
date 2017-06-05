@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="n in arrObj">{{n.name}}</div>
+        <!--<div v-for="n in arrObj">{{n.name}}</div>
         <a href="./index.html">test</a>
         <input v-model="msg">
         <toggle></toggle>
@@ -9,15 +9,9 @@
                 <temp></temp>
             </div>
             <div id="2222">
-<<<<<<< HEAD
-                <temp2>
-                    <!--<p>slot测试</p>-->
-                </temp2>
-=======
                 <temp2 :prop="msg" @communication="getComm"></temp2>
                 <temp2 :prop="msg" @communication="getComm"></temp2>
                 <p>{{counter}}</p>
->>>>>>> 6a4ac26b705a92592b1dfbcc4d20efba5452fb88
             </div>
             <div>
                 <zslot>
@@ -28,7 +22,7 @@
         </div>
         <debounce></debounce>
         <box-model></box-model>
-        <nth-child></nth-child>
+        <nth-child></nth-child>-->
     </div>
 
 </template>
@@ -50,12 +44,7 @@
         data () {
             return {
                 msg: 'Hello World!',
-<<<<<<< HEAD
-                arr: [1,2,3],
-                arrObj:[{data:1,name:'z'}]
-=======
                 counter:0
->>>>>>> 6a4ac26b705a92592b1dfbcc4d20efba5452fb88
             }
         },
         components:{
@@ -74,7 +63,6 @@
             }
         }
     }
-    console.log(obj);
 </script>
 
 <style>

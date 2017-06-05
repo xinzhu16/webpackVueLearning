@@ -2,9 +2,12 @@
  * Created by Administrator on 17/5/24.
  */
 import {obj} from './const';
+import {k} from './underscoreExample'
+
 export default({
 
 })
+console.log(k);
 obj.name = 'zzc';
 console.log(obj.name);
 function SuperType(name){
