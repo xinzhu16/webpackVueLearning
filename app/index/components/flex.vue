@@ -35,9 +35,9 @@
         flex:0;
     }
     @keyframes myfirst {
-        0% {width:100px}
+        0% {background:red;transform:translate(200px,200px)}
         20% {width:300px}
         50% {width:600px}
-        100% {width:100px}
+        100% {width:100px;transform:translate(200px,200px)}
     }
 </style>
