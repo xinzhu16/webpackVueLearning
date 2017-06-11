@@ -13,6 +13,7 @@
     import temp2 from '../temp';
     import zslot from './slot';
     import nextTick from './nextTick';
+    import sort1 from '../js/sort'
     import toggle from './transition';
     import nthChild from './nthChild'
     import {instance1,instance2} from '../js/prototype.vue';

@@ -3,10 +3,23 @@
  */
 import Vue from 'vue'
 import Favlist from './components/Favlist';
-// import VueRouter from 'vue-router';
+import VueRouter from 'vue-router';
+import App from './components/App';
+import flex from './components/flex';
+import centerAlign from './components/centerAlign';
+import subRouter from './components/router'
+Vue.use(VueRouter);
+const routes = [
+    {'path':'/',redirect:'/load'},
+    {'path':'/index',component:App,children:subRouter.router},
+    {'path':'/load',component:App,children:subRouter.router}
+];
 
+const router = new VueRouter({
+    routes:routes
+});
 
 new Vue({
-    el:'#test',
-    render:m => m(Favlist)
-});
+    router:router,
+    render:m => m(App)
+}).$mount('#test');
