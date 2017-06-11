@@ -18,6 +18,8 @@
         display: flex;
         width:500px;
         height: 500px;
+        justify-content: center;/*水平居中*/
+        align-items: center;/*垂直居中*/
         .child{
             width:100px;
             height:100px;
@@ -28,7 +30,7 @@
         flex:0;
         width:100px;
         height:100px;
-        animation: myfirst 5s infinite;
+        /*animation: myfirst 5s infinite;*/
     }
     .item2{
         width:100px;
