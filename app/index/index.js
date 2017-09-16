@@ -5,6 +5,7 @@ import Vue from 'vue'
 import Favlist from './components/Favlist';
 import VueRouter from 'vue-router';
 import App from './components/App';
+import link from "./components/link"
 import flex from './components/flex';
 import centerAlign from './components/centerAlign';
 import subRouter from './components/router'
@@ -21,5 +22,5 @@ const router = new VueRouter({
 
 new Vue({
     router:router,
-    render:m => m(App)
+    render:m => m(link)
 }).$mount('#test');
