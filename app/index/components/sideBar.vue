@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    var arr = ["temp","Favlist","nextTick"];
+    var arr = ["temp","Favlist","nextTick","centerAlign"];
     export default{
         data(){
             return {
