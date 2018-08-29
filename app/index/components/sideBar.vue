@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="side-bar">
         <ul>
             <li v-for="item in items">
                 <router-link  :to="item" key="item">{{item}}</router-link>
@@ -8,8 +8,13 @@
     </div>
 </template>
 
+<style lang="sass">
+    .side-bar
+        background: cadetblue
+</style>
+
 <script>
-    var arr = ["temp","Favlist","nextTick","centerAlign"];
+    var arr = ["temp","Favlist","nextTick","centerAlign","BFC"];
     export default{
         data(){
             return {

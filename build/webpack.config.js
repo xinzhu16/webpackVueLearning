@@ -49,6 +49,10 @@ module.exports = {
             {
                 test:/\.s[c|a]ss$/,
                 loader:'style!css!sass'
+            },
+            {
+                test:/\.(jpe?g|png|gif|svg)$/i,
+                loader: 'img-loader!url-loader'
             }
         ]
     },
