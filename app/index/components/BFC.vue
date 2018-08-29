@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="left-box"></div>
-        <div class="right-box">rrrrrrrrrrrrrrrrrrrrrrrr</div>
+        <div class="right-box">rrrrrrrrrrrrrrrrrrrrrrr</div>
         <span class="p">dddddddd</span>
         <span class="p2">aaaaaaa</span>
         <input/>
